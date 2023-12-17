@@ -1,3 +1,7 @@
+* {
+  list-style: none;
+}
+
 // banner
 .banner {
   padding: 80px 0 0;
@@ -569,6 +573,7 @@
 
 .doc-pagination {
   margin-top: 50px;
+  display: flex;
   justify-content: space-between;
 
   a {
@@ -765,4 +770,9 @@
       border-bottom: 1px solid $border-color;
     }
   }
+}
+
+// padding-left layout
+.padding-left-layout {
+  padding-left: 2.25rem;
 }
