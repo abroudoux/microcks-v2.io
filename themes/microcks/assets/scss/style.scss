@@ -31,7 +31,7 @@ $font-icon: '{{.font_icon | default "Font Awesome 6 Free"}}';
 @import 'typography';
 @import 'common';
 @import 'common-dark';
-@import 'templates/navigation.scss';
+@import 'templates/navigation';
 @import 'templates/main.scss';
 @import 'templates/search-modal';
 @import 'notice';
