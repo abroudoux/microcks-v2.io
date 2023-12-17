@@ -1,6 +1,6 @@
 {{ "<!-- navigation -->" | safeHTML }}
 <header class="sticky-top doc-navigation">
-  <div class="doc-container-fluid padding-left-layout">
+  <div class="doc-container-fluid padding-layout">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
@@ -85,11 +85,13 @@
       </form>
 
       <div class="d-lg-flex d-none">
-        {{ range site.Params.nav_button }}
+        <!-- {{ range site.Params.nav_button }}
         <a href="{{ .link | absLangURL }}"
           class="btn btn-sm {{if eq .style `outline`}}btn-outline-primary{{else}}btn-primary{{end}} ms-lg-4">{{ .label
           }}</a>
-        {{ end }}
+        {{ end }} -->
+
+        <a href="" class="btn btn-sm btn-primary ms-lg-4">♻️ 1.7.1 Has just been released! 🚀</a>
       </div>
       <!-- /for desktop -->
     </nav>
