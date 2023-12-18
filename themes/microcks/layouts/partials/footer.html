@@ -1,12 +1,12 @@
-<footer class="bg-light" style="width: 100%; height: auto; display: flex; flex-direction: column; align-items: center;">
-  <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; height: 100%; width: 100%; padding: 5vh 5vw 0;">
+<footer class="bg-light">
+  <div class="footer-container">
     <div>
       <a class="d-block h5" href="{{ site.BaseURL | absLangURL}}">
         {{ partial "logo.html" }}
       </a>
       <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
     </div>
-    <div>
+    <div style="display: flex; flex-direction: row; gap: 2vw;">
       <div>
         {{ if site.Menus.footer_left }}
           <div class="h5 mb-2">{{ site.Params.footer_menu_left }}</div>
@@ -58,7 +58,7 @@
       {{ end }}
     </div>
   </div>
-  <div class="border-top border-default text-center py-4 mt-4">
+  <div class="border-top border-default text-center py-4 mt-4" style="width: 100%;">
     <small class="content">{{ site.Params.Copyright | markdownify }}</small>
   </div>
 </footer>
