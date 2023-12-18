@@ -30,6 +30,11 @@
     font-weight: 500;
   }
 
+  li.nav-item.active a {
+    background-color: $light;
+    border-radius: 6px;
+  }
+
   option {
     color: rgba($black, 0.8);
   }
@@ -312,12 +317,19 @@
 
 // dark style
 .dark .navigation {
+
+  background-color: $dark;
+
   select {
     color: $white;
   }
 
   .navbar-light .navbar-toggler {
     color: darken($white, 13.33);
+  }
+
+  li.nav-item.active a {
+    background-color: black;
   }
 
   .nav-link {

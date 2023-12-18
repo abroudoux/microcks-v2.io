@@ -2,7 +2,7 @@
 <header class="navigation">
   <div class="container">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg">
       <!-- navbar brand/logo -->
       <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
         {{ partial "logo.html" }}
@@ -119,7 +119,7 @@
 
         {{ if site.Params.theme_switcher }}
         <!-- theme switcher -->
-        <div class="theme-switcher d-none d-lg-inline-block">
+        <div class="theme-switcher d-none d-lg-inline-block bg-light theme-toggle-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" width="20" height="20" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000">
             <mask id="m">
               <circle class="masker" cx="7.5" cy="7.5" r="8.5" fill="#fff" />
