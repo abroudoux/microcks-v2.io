@@ -3,9 +3,14 @@
   background-color: transparent;
   padding: 0;
   transition: 0.15s ease-out;
-  position: relative;
   z-index: 9999;
   font-family: $font-secondary;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  display: flex; 
+  align-items: center;
 
   @include mobile-xs {
     .navbar-brand {
