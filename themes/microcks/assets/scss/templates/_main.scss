@@ -809,3 +809,10 @@ main {
     }
   }
 }
+
+// menu active li
+li.nav-item.active a {
+  background-color: $light;
+  border-radius: 6px;
+}
+
