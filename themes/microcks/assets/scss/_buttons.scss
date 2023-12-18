@@ -5,13 +5,13 @@
   font-weight: 500;
   padding: 1.1em 1.8em;
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6px;
   border: 2px solid;
   transition: 0.3s ease;
 
   &-sm {
-    padding: 0.9em 1.6em;
-    font-size: 1em;
+    padding: 10px 25px;
+    font-size: 14px;
   }
 
   &:hover,
@@ -87,11 +87,4 @@
       margin-left: 10px;
     }
   }
-}
-
-.btn-sm {
-  padding: 10px 25px;
-  font-size: 14px;
-  border-radius: 6px; 
-  height: 100%;
 }
