@@ -23,6 +23,32 @@
 {{ end }}
 <!-- /banner -->
 
+
+<!-- future banner ? -->
+<!-- banner -->
+<!-- {{ with .Params.banner }}
+<section style="width: 100vw; height: 100vh; display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+  <div style="width: 50%; height: 100%; display: flex; flex-direction: column; align-items: start; justify-content: center; padding: 5vh 2.5vw;">
+    <h1>{{ .title | markdownify }}</h1>
+    <p>{{ .content | markdownify }}</p>
+    <div class="mb-5">
+      {{ if .button.enable }}
+      {{ with .button }}
+      <a href="" class="btn btn-primary">Get Started</a>
+      <a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-outline-primary m-2">{{ .label }}</a>
+      {{ end }}
+      {{ end }}
+    </div>
+    {{ partial "image" (dict "Src" .image "Alt" "banner image" "Size" "450x") }}</div>
+  </div>
+  <div style="width: 50%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 5vh 2.5vw;">
+    <div style="width: 100%; height: 100%; background-color: red;"></div>
+  </div>
+</section>
+{{ end }} -->
+<!-- /banner -->
+
+
 <!-- screenshot -->
 {{ with .Params.screenshot }}
 {{ if .enable }}
