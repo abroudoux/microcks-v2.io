@@ -2,7 +2,7 @@
 
 <!-- banner -->
 {{ with .Params.banner }}
-<section class="banner">
+<section class="banner" style="width: 100vw; height: 100vh;">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
@@ -70,7 +70,7 @@
 <!-- clients_logo_slider -->
 {{ if .Params.clients_logo_slider.enable }}
 {{ with .Params.clients_logo_slider }}
-<section class="section overflow-hidden">
+<section class="section overflow-hidden" style="background-color: #fff;">
   <div class="container">
     <!-- no text so remove blanks -->
     <!--
@@ -213,7 +213,7 @@
       </div>
       <div class="col-12 text-center">
         {{ range .tools }}
-        <div class="is-hoverable p-4 shadow rounded-2 d-inline-block m-3" style="background-color: #fff;">
+        <div class="p-4 rounded-2 d-inline-block m-3" style="background-color: #fff;">
           {{ partial "image" (dict "Src" . "Alt" . "Size" "x45" "Class" "w-100 rounded-2") }}
         </div>
         {{ end }}
@@ -228,10 +228,11 @@
 {{ end }}
 <!-- /tools_intregrate sponsor -->
 
+
 <!-- tools_intregrate support -->
 {{ with .Params.tools_intregrate_support }}
 {{ if .enable }}
-<section class="section pb-0">
+<section class="section pb-0" style="padding-top: 4rem;">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 text-center mx-auto">
@@ -240,7 +241,7 @@
       </div>
       <div class="col-12 text-center">
         {{ range .tools }}
-        <div class="is-hoverable p-4 shadow rounded-2 d-inline-block m-3" style="background-color: #fff;">
+        <div class="p-4 rounded-2 d-inline-block m-3" style="background-color: #fff;">
           {{ partial "image" (dict "Src" . "Alt" . "Size" "x45" "Class" "w-100 rounded-2") }}
         </div>
         {{ end }}
