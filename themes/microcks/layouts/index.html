@@ -31,7 +31,7 @@
   <div class="herobanner-left">
     <h1>{{ .title | markdownify }}</h1>
     <p>{{ .content | markdownify }}</p>
-    <div class="mb-5">
+    <div class="mt-3">
       {{ if .button.enable }}
       {{ with .button }}
       <a href="" class="btn btn-primary">Get Started</a>
@@ -39,11 +39,12 @@
       {{ end }}
       {{ end }}
     </div>
-    {{ partial "image" (dict "Src" .image "Alt" "banner image" "Size" "450x") }}</div>
+    <div class="cloud-native-sandbox">
+      {{ partial "image" (dict "Src" .image "Alt" "banner image" "Size" "350x") }}
+    </div>
   </div>
   <div class="herobanner-right">
-    <!-- <img src="../../../assets/images/herobanner/electron.png" alt=""> -->
-    <div class="herobanner-image"></div>
+    <!-- <div class="herobanner-image"></div> -->
   </div>
 </section>
 {{ end }}
