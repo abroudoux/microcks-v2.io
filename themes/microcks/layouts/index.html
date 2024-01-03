@@ -44,7 +44,9 @@
     </div>
   </div>
   <div class="herobanner-right">
-    <!-- <div class="herobanner-image"></div> -->
+    <div class="herobanner-image">
+      {{ partial "image" (dict "Src" .Atom "Alt" "Microcks Atom Schema") }}
+    </div>
   </div>
 </section>
 {{ end }}

@@ -4,6 +4,7 @@ banner:
   title : "Open source cloud-native tool for
            API Mocking and Testing"
   image : "images/cncf-sandbox-horizontal-color.svg"
+  atom : "images/Atom.svg"
   content : "A **dynamic**, **interconnected ecosystem** to help crafting **customized**, **multi-protocol universal** API **value chain**,** powered by **cloud-native automation & standards** #APIOps"
   button:
     enable : true
